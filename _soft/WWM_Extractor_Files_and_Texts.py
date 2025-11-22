@@ -656,6 +656,8 @@ class MyApp(QWidget):
                         if len(row) <= max(id_idx, text_idx):
                             continue
                         text = row[text_idx]
+                        if sep == '\t' and text:
+                            text = text.replace('\t', ' \\t ')
                         if text and text.strip():
                             writer.writerow([row[id_idx], text])
                             count += 1
