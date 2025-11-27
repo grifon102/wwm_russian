@@ -1,6 +1,7 @@
 # tsv files
 _cn_translate/no_english.tsv
 translation_ru_process.tsv
+batch_translate.py
 
 # config
 _soft/config.ini
